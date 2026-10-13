@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BrightPath — learn new skills with friendly courses, practical projects, and a community that helps you grow.">
+  <title>BrightPath | Learn Something Amazing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    New learning paths are here — explore what’s possible!
+    <a href="#courses">Explore courses <span aria-hidden="true">→</span></a>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="BrightPath home">
+        <span class="brand-mark">✦</span><span>bright<span class="brand-accent">path</span></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#courses">Courses</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#stories">Learner stories</a>
+        <a href="#about">About</a>
+      </div>
+      <a class="nav-cta" href="#courses">Start learning <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-icon">✹</span> YOUR NEXT CHAPTER STARTS HERE</div>
+        <h1>Small steps.<br><span class="gradient-text">Big possibilities.</span></h1>
+        <p class="hero-description">Build real-world skills, follow your curiosity, and turn “someday” into your next achievement.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#courses">Find your course <span>→</span></a>
+          <a class="button button-quiet" href="#how-it-works"><span class="play-icon">▶</span> See how it works</a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true"><span>AJ</span><span>MK</span><span>RS</span><span>+</span></div>
+          <div><strong>Learn at your own pace</strong><small>Curiosity looks good on you.</small></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of learning topics">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="floating-card card-code"><span class="mini-icon purple">⌘</span><div><b>Code & create</b><small>Make ideas real</small></div></div>
+        <div class="floating-card card-idea"><span class="mini-icon yellow">✦</span><div><b>Stay curious</b><small>Grow every day</small></div></div>
+        <div class="floating-card card-progress"><div class="progress-ring">78%</div><div><b>You're making progress</b><small>One lesson at a time</small></div></div>
+        <div class="hero-blob">
+          <div class="blob-sun">✦</div>
+          <div class="book book-back"></div><div class="book book-front"><span>LEARN</span><b>YOUR<br>NEXT<br>THING.</b><i>✳</i></div>
+          <div class="spark spark-a">✦</div><div class="spark spark-b">✳</div><div class="spark spark-c">✧</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip container" aria-label="Learning highlights">
+      <div><strong>Learn</strong><span>on your schedule</span></div>
+      <div><strong>Build</strong><span>with practical projects</span></div>
+      <div><strong>Grow</strong><span>one skill at a time</span></div>
+      <div><strong>Belong</strong><span>to a curious community</span></div>
+    </section>
+
+    <section class="section courses-section" id="courses">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow">PICK YOUR PATH</div><h2>What do you want to <span class="gradient-text">learn next?</span></h2></div>
+          <a class="text-link" href="#all-courses">Browse learning paths <span>→</span></a>
+        </div>
+        <div class="filter-row" id="all-courses" aria-label="Filter courses">
+          <button class="filter-chip active" data-filter="all">All paths</button>
+          <button class="filter-chip" data-filter="technology">Technology</button>
+          <button class="filter-chip" data-filter="creative">Creative</button>
+          <button class="filter-chip" data-filter="business">Business</button>
+        </div>
+        <div class="course-grid">
+          <article class="course-card" data-category="technology">
+            <div class="course-art art-lilac"><span class="art-label">TECH</span><div class="art-symbol symbol-code">&lt;/&gt;</div><span class="decor-dot dot-one"></span><span class="decor-dot dot-two"></span></div>
+            <div class="course-content"><div class="course-meta"><span>6 modules</span><span class="level">Beginner friendly</span></div><h3>Web Development</h3><p>Turn your ideas into websites with HTML, CSS, and JavaScript.</p><div class="course-bottom"><span>⏱ 4–6 weeks</span><a href="#start" class="course-link" data-course="Web Development" aria-label="Explore Web Development">↗</a></div></div>
+          </article>
+          <article class="course-card" data-category="technology">
+            <div class="course-art art-mint"><span class="art-label">TECH</span><div class="cloud-icon">☁</div><div class="server-stack"><i></i><i></i><i></i></div><span class="decor-ring"></span></div>
+            <div class="course-content"><div class="course-meta"><span>8 modules</span><span class="level">Beginner friendly</span></div><h3>Cloud Foundations</h3><p>Understand cloud computing, servers, storage, and deployment basics.</p><div class="course-bottom"><span>⏱ 5–7 weeks</span><a href="#start" class="course-link" data-course="Cloud Foundations" aria-label="Explore Cloud Foundations">↗</a></div></div>
+          </article>
+          <article class="course-card" data-category="creative">
+            <div class="course-art art-peach"><span class="art-label">CREATE</span><div class="design-shape shape-circle"></div><div class="design-shape shape-square"></div><div class="design-shape shape-triangle"></div><span class="art-squiggle">〰</span></div>
+            <div class="course-content"><div class="course-meta"><span>5 modules</span><span class="level">All levels</span></div><h3>Design Thinking</h3><p>Explore creative problem-solving and design experiences people love.</p><div class="course-bottom"><span>⏱ 3–4 weeks</span><a href="#start" class="course-link" data-course="Design Thinking" aria-label="Explore Design Thinking">↗</a></div></div>
+          </article>
+          <article class="course-card" data-category="business">
+            <div class="course-art art-yellow"><span class="art-label">GROW</span><div class="chart-bars"><i></i><i></i><i></i><i></i></div><div class="chart-arrow">↗</div><span class="chart-star">✦</span></div>
+            <div class="course-content"><div class="course-meta"><span>7 modules</span><span class="level">Practical skills</span></div><h3>Digital Marketing</h3><p>Learn the building blocks of content, campaigns, and online growth.</p><div class="course-bottom"><span>⏱ 4–5 weeks</span><a href="#start" class="course-link" data-course="Digital Marketing" aria-label="Explore Digital Marketing">↗</a></div></div>
+          </article>
+          <article class="course-card" data-category="technology">
+            <div class="course-art art-blue"><span class="art-label">TECH</span><div class="data-bars"><i></i><i></i><i></i><i></i><i></i></div><div class="data-lens">⌕</div></div>
+            <div class="course-content"><div class="course-meta"><span>6 modules</span><span class="level">Beginner friendly</span></div><h3>Data Essentials</h3><p>Make sense of data with spreadsheets, charts, and clear thinking.</p><div class="course-bottom"><span>⏱ 4 weeks</span><a href="#start" class="course-link" data-course="Data Essentials" aria-label="Explore Data Essentials">↗</a></div></div>
+          </article>
+          <article class="course-card" data-category="creative">
+            <div class="course-art art-pink"><span class="art-label">CREATE</span><div class="camera-body"><span></span><i></i></div><div class="camera-flash">✦</div><div class="camera-star">✳</div></div>
+            <div class="course-content"><div class="course-meta"><span>4 modules</span><span class="level">Project based</span></div><h3>Visual Storytelling</h3><p>Share better stories through imagery, composition, and simple editing.</p><div class="course-bottom"><span>⏱ 2–3 weeks</span><a href="#start" class="course-link" data-course="Visual Storytelling" aria-label="Explore Visual Storytelling">↗</a></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section section" id="how-it-works">
+      <div class="container how-layout">
+        <div class="how-intro"><div class="eyebrow">LEARNING, MADE HUMAN</div><h2>A little progress<br>goes a <span class="gradient-text">long way.</span></h2><p>No pressure to know it all. Just a clear path, useful practice, and room to grow.</p><a class="button button-dark" href="#courses">Choose your path <span>→</span></a></div>
+        <div class="steps">
+          <div class="step"><div class="step-number step-purple">01</div><div><h3>Choose what sparks you</h3><p>Start with a topic that makes you curious. No experience needed for beginner paths.</p></div><span class="step-emoji">🧭</span></div>
+          <div class="step"><div class="step-number step-orange">02</div><div><h3>Learn by doing</h3><p>Practice with bite-sized lessons, mini challenges, and projects you can show off.</p></div><span class="step-emoji">🛠️</span></div>
+          <div class="step"><div class="step-number step-green">03</div><div><h3>Celebrate your progress</h3><p>Keep your momentum, reflect on what you learned, and pick your next challenge.</p></div><span class="step-emoji">🎉</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section section" id="stories">
+      <div class="container quote-card"><div class="quote-mark">“</div><blockquote>You don't have to see the whole staircase. Just take the first step and keep going.</blockquote><div class="quote-footer"><div class="quote-avatar">BP</div><div><strong>The BrightPath mindset</strong><span>For every curious beginner</span></div><div class="quote-stars">✦ ✦ ✦ ✦ ✦</div></div><div class="quote-decoration">✳</div></div>
+    </section>
+
+    <section class="cta-section container" id="start">
+      <div class="cta-card"><div class="cta-spark">✦</div><div class="eyebrow">YOUR FUTURE IS A WORK IN PROGRESS</div><h2>Ready to learn<br>something <span>new?</span></h2><p>Pick a path. Try a project. Surprise yourself.</p><a class="button button-white" href="#courses">Explore learning paths <span>→</span></a><div class="cta-doodle doodle-one">✳</div><div class="cta-doodle doodle-two">✦</div><div class="cta-circle"></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="about">
+    <div class="container footer-main"><a class="brand footer-brand" href="#home"><span class="brand-mark">✦</span><span>bright<span class="brand-accent">path</span></span></a><p>Curiosity today. Possibility tomorrow.</p><div class="footer-links"><a href="#courses">Courses</a><a href="#how-it-works">How it works</a><a href="#about">About</a></div></div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> BrightPath Learning. Demo project.</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
